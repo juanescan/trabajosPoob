@@ -6,12 +6,17 @@
  */
 public class Data{
     
-
+    private String bool;
+    private String s;
+    private String n;
+    
     /**
      * Constructs a new Data given its value, If it is not possible, it is assumed FALSE
      */
     public Data(String s){
-       
+        bool = "true";
+        this.s = s;
+        n = "2";
     }
 
   
@@ -46,21 +51,54 @@ public class Data{
      * Returns the data type
      * @returns 'b', 'n', or 'c'
      */
-    public char type(Data b){
+    public char type(){
+        s = string();
+        if (s.equalsIgnoreCase("true") ||
+        s.equalsIgnoreCase("false")){
+            return 'b';
+        }
+        
+        try {
+            Double.parseDouble(s);
+            return 'n';
+        } catch (NumberFormatException e) {
+            
+        }
+        
+        if (s.length() == 1){
+            return 'c';
+        }
+        
         return '?';
     }
     
     @Override
     //Return the string representation of the data, not the original string
     public String toString () {
-          return null;
+          char m = type();
+          if (m == 'b'){
+                s = string();
+                s = s.toUpperCase();
+          }
+          
+          if (m == 'c'){
+              s = string();
+          }
+          
+          if (m == 'n'){
+              s = string();
+          }
+          if (m != 'b' || m != 'c' || m!= 'n'){
+              return "FALSE";
+          }
+          return s;
     }   
     
      /**
      * Return the string used to create the Data without leading or trailing blanks
      */   
     public String string() {
-          return null;
+          return s.trim();
     }  
     
 }
