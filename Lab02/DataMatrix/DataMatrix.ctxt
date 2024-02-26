@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=DataMatrix
+comment0.text=\r\n\ @author\ ECI,\ 2024\r\n\r\n
+comment1.params=data
+comment1.target=DataMatrix(java.lang.String[][])
+comment1.text=\r\n\ Creates\ a\ matrix\ with\ the\ defined\ size\ and\ value\r\n
+comment2.params=
+comment2.target=DataMatrix\ shape()
+comment2.text=\r\n\ Calculate\ the\ size\ of\ a\ DataMatrix\ and\ return\ the\ size\ in\ a\ DataMatrix\r\n
+comment3.params=row\ column
+comment3.target=java.lang.String\ toString(int,\ int)
+comment3.text=\r\n\ Return\ the\ string\ representation\ of\ the\ data,\ not\ the\ original\ string\ of\ the\ position\ in\ the\ DataMatrix\ specific\r\n
+comment4.params=
+comment4.target=DataMatrix\ transpose()
+comment4.text=\r\n\ Transpose\ the\ DataMatrix\r\n
+comment5.params=t
+comment5.target=DataMatrix\ add(DataMatrix)
+comment5.text=\r\n\ Add\ the\ DataMatrix\ with\ another\ DataMatrix\ position\ by\ position\r\n
+comment6.params=t
+comment6.target=DataMatrix\ sub(DataMatrix)
+comment6.text=\r\n\ Sub\ the\ DataMatrix\ with\ another\ DataMatrix\ position\ by\ position\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+numComments=8
